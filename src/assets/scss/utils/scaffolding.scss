@@ -1,9 +1,14 @@
 body {
   font-family: $mainFont;
   font-weight: 400;
+  color: $mainFontColor;
   margin: 0;
   padding: 0;
   background-color: $default-color;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $danger-color;
+  }
 }
 
 h1,
