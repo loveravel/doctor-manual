@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   min-height: 787px;
+  margin-bottom: 291px;
   color: $extraFontColor;
   background-image: url('/assets/img/header-bg-phone.svg');
   background-position: center;
@@ -14,7 +15,6 @@
   justify-content: space-between;
   width: $phoneContentWidth;
   margin: 0 auto;
-  margin-bottom: 500px;
   padding: 23px (($phoneWidth - $phoneContentWidth) / 2) 0;
 }
 
@@ -44,6 +44,7 @@
 
   .page-header {
     min-height: 594px;
+    margin-bottom: 75px;
     background-image: url('/assets/img/header-bg-tablet.svg');
 
     &::after {
@@ -105,6 +106,7 @@
   @media screen and (min-width: $desktopWidth) {
     .page-header {
       min-height: 915px;
+      margin-bottom: 84px;
       background-image: url('/assets/img/header-bg-desktop.svg');
 
       &::after {

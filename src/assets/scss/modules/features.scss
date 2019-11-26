@@ -39,27 +39,27 @@
     margin-bottom: 33px;
     &::before {
       top: -3px;
-      background-image: url(/assets/img/phone-icon.svg);
+      background-image: url('/assets/img/phone-icon.svg');
     }
   }
 
   &--powered {
     margin-bottom: 40px;
     &::before {
-      background-image: url(/assets/img/stethoscope-icon.svg);
+      background-image: url('/assets/img/stethoscope-icon.svg');
     }
   }
 
   &--security {
     margin-bottom: 39px;
     &::before {
-      background-image: url(/assets/img/lock-icon.svg);
+      background-image: url('/assets/img/lock-icon.svg');
     }
   }
 
   &--free {
     &::before {
-      background-image: url(/assets/img/ruble-icon.svg);
+      background-image: url('/assets/img/ruble-icon.svg');
     }
   }
 }

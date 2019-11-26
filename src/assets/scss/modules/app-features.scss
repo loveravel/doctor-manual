@@ -1,0 +1,222 @@
+.app-features {
+
+}
+
+.app-features__wrapper {
+  width: $phoneContentWidth;
+  margin: 0 auto;
+  padding: 0 (($phoneWidth - $phoneContentWidth) / 2);
+}
+
+.app-features__title {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: $highlight-color;
+  margin-bottom: 26px;
+}
+
+.app-features__list {
+  @include clear-list;
+  padding-left: 80px;
+  line-height: normal;
+}
+
+.app-features__item {
+  position: relative;
+  margin-bottom: 21px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -80px;
+    top: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &--control::before {
+    background-image: url('/assets/img/control-icon.svg');
+  }
+
+  &--courses::before {
+    background-image: url('/assets/img/courses-icon.svg');
+  }
+
+  &--storage::before {
+    background-image: url('/assets/img/storage-icon.svg');
+  }
+
+  &--reminders::before {
+    background-image: url('/assets/img/reminders-icon.svg');
+  }
+
+  &--calendar::before {
+    background-image: url('/assets/img/calendar-icon.svg');
+  }
+
+  &--journal::before {
+    background-image: url('/assets/img/journal-icon.svg');
+  }
+
+  &--news::before {
+    background-image: url('/assets/img/news-icon.svg');
+  }
+
+  &--consultations::before {
+    background-image: url('/assets/img/consultations-icon.svg');
+  }
+
+  &--coming::after {
+    content: 'Скоро';
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: $extraFontColor;
+    position: absolute;
+    right: 39px;
+    top: -7px;
+    width: 53px;
+    height: 15px;
+    background-image: linear-gradient(to right, #f26a35 0%, #ee3048 100%);
+    border-radius: 9px;
+  }
+}
+
+@media screen and (min-width: $tabletWidth) {
+  .app-features__wrapper {
+    width: $tabletContentWidth;
+    padding: 0 (($tabletWidth - $tabletContentWidth) / 2);
+  }
+
+  .app-features__title {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 1px;
+    margin-bottom: 33px;
+  }
+
+  .app-features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .app-features__item {
+    width: 195px;
+    margin-bottom: 30px;
+    padding-left: 65px;
+
+    &--coming::after {
+      right: 26px;
+      top: -6px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &--calendar::before,
+    &--journal::before,
+    &--news::before,
+    &--consultations::before {
+      left: -10px;
+    }
+
+    &--control {
+      order: 0;
+    }
+
+    &--courses {
+      order: 2;
+    }
+
+    &--storage {
+      order: 4;
+    }
+
+    &--reminders {
+      order: 6;
+    }
+
+    &--calendar {
+      order: 1;
+    }
+
+    &--journal {
+      order: 3;
+    }
+
+    &--news {
+      order: 5;
+    }
+
+    &--consultations {
+      order: 7;
+    }
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .app-features__wrapper {
+      width: $desktopContentWidth;
+      padding: 0 (($desktopWidth - $desktopContentWidth) / 2);
+    }
+
+    .app-features__title {
+      justify-content: flex-start;
+      font-size: 46px;
+      margin-left: -3px;
+      margin-bottom: 55px;
+    }
+
+    .app-features__item {
+      width: 257px;
+      margin-bottom: 56px;
+      padding-left: 86px;
+
+      &::before {
+        left: -3px;
+        top: -7px;
+        width: 64px;
+        height: 64px;
+      }
+
+      &--coming::after {
+        top: -1px;
+        right: 77px;
+      }
+
+      &--courses {
+        order: 4;
+      }
+
+      &--storage {
+        order: 1;
+      }
+
+      &--reminders {
+        order: 5;
+      }
+
+      &--calendar {
+        order: 2;
+      }
+
+      &--journal {
+        order: 6;
+      }
+
+      &--news {
+        order: 3;
+      }
+
+      &--consultations {
+        order: 7;
+      }
+    }
+  }
+}
