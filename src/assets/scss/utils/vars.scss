@@ -13,6 +13,10 @@ $desktopWidth            : 1920px;
 $tabletWidth             : 768px;
 $phoneWidth              : 360px;
 
+$phoneContentWidth       : 288px;
+$tabletContentWidth      : 570px;
+$desktopContentWidth     : 1496px;
+
 // Main color
 $default-color           : #ffffff;
 $primary-color           : #444ce0;
@@ -23,7 +27,7 @@ $light-color             : #999999;
 $purple-color            : #8854d0;
 
 // Neutral Color
-$neutral-primary         : #303133;
+$neutral-primary         : #757575;
 $neutral-regular         : #606266;
 $neutral-secondary       : #909399;
 $neutral-placeholder     : #C0C4CC;

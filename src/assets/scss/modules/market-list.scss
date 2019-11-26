@@ -1,0 +1,34 @@
+.market-list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1px;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: $tabletWidth) {
+  .market-list {
+    justify-content: flex-start;
+  }
+
+  .market-list__item--app-store {
+    order: 1;
+    margin-left: 4px;
+  }
+
+  .market-list__img {
+    width: 88px;
+    height: 27px;
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .market-list__item--app-store {
+      margin-left: 26px;
+    }
+
+    .market-list__img {
+      width: 162px;
+      height: 46px;
+    }
+  }
+}

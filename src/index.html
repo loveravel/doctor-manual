@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Справочник врача</title>
 </head>
 <body>
   <header class="page-header">
@@ -20,55 +20,103 @@
         alt="Логотип. МИР"
       >
 
+      <nav class="page-header__nav nav">
+        <button class="nav__toggle">
+          <span class="visually-hidden">Navigation toggle</span>
+        </button>
+      </nav>
+
       <ul class="page-header__market-list market-list">
-        <li class="market-list__item">
-          <img class="market-list__img"
-            src="assets/img/app-store.svg"
-            width="127" height="35"
-            alt="Логотип. App Store"
-          >
+        <li class="market-list__item market-list__item--app-store">
+          <a href="" class="market-list__link">
+            <img class="market-list__img"
+              src="assets/img/app-store.svg"
+              width="128" height="36"
+              alt="Логотип. App Store"
+            >
+          </a>
         </li>
-        <li class="market-list__item">
-          <img class="market-list__img"
-            src="assets/img/play-store.svg"
-            width="127" height="35"
-            alt="Логотип. Play Store"
-          >
+        <li class="market-list__item market-list__item--play-store">
+          <a href="" class="market-list__link">
+            <img class="market-list__img"
+              src="assets/img/play-store.svg"
+              width="128" height="36"
+              alt="Логотип. Play Store"
+            >
+          </a>
         </li>
       </ul>
 
-      <div class="page-header__features featrues">
+      <div class="page-header__features features">
         <p class="features__motivation">
             Все данные о вашем здоровье в одном приложении
           </p>
           <p class="features__description">
-              Универсальная электронная медицинская карта и сервис для дистанционного сопровождения пациентов, которая решает следующие проблемы:
+            Универсальная электронная медицинская карта <br class="features__br features__br--phone">
+            и сервис для&nbsp;дистанционного сопровождения пациентов, которая <br class="features__br features__br--tablet">
+            решает следующие проблемы:
           </p>
           <ul class="features__list">
-            <li class="features__item">
-              Все необходимое в одном месте
+            <li class="features__item features__item--place">
+              Все необходимое <br> в одном месте
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--powered">
               Разработано врачами
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--security">
               Безопасность данных
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--free">
               Бесплатное приложение
             </li>
           </ul>
       </div>
+
       <ul class="page-header__phone-list phones">
-        <li class="phones__item">
-          <img src="assets/img/phone-ios.png" alt="Внешний вид приложения на iOS" class="phones__img">
+        <li class="phones__item phones__item--ios">
+          <picture>
+            <source media="(min-width: 1920px)"
+              srcset="assets/img/phone-ios-desktop.png 1x,
+              assets/img/phone-ios-desktop@2x.png 2x,
+              assets/img/phone-ios-desktop@3x.png 3x"
+            >
+            <source media="(min-width: 768px)"
+              srcset="assets/img/phone-ios-tablet.png 1x,
+              assets/img/phone-ios-tablet@2x.png 2x,
+              assets/img/phone-ios-tablet@3x.png 3x"
+            >
+            <img class="phones__img"
+              src="assets/img/phone-ios-phone.png"
+              srcset="assets/img/phone-ios-phone@2x.png 2x, assets/img/phone-ios-phone@3x.png 3x"
+              width="216" height="368"
+              alt="Внешний вид приложения на iOS"
+            >
+          </picture>
           <span class="phones__name">iOS</span>
         </li>
-        <li class="phones__item">
-          <img src="assets/img/phone-android.png" alt="Внешний вид приложения на Android" class="phones__img">
+        <li class="phones__item phones__item--android">
+          <picture>
+            <source media="(min-width: 1920px)"
+              srcset="assets/img/phone-android-desktop.png 1x,
+              assets/img/phone-android-desktop@2x.png 2x,
+              assets/img/phone-android-desktop@3x.png 3x"
+            >
+            <source media="(min-width: 768px)"
+              srcset="assets/img/phone-android-tablet.png 1x,
+              assets/img/phone-android-tablet@2x.png 2x,
+              assets/img/phone-android-tablet@3x.png 3x"
+            >
+            <img class="phones__img"
+              src="assets/img/phone-android-phone.png"
+              srcset="assets/img/phone-android-phone@2x.png 2x, assets/img/phone-android-phone@3x.png 3x"
+              width="243" height="440"
+              alt="Внешний вид приложения на Android"
+            >
+          </picture>
           <span class="phones__name">Android</span>
         </li>
       </ul>
+
     </div>
   </header>
 </body>

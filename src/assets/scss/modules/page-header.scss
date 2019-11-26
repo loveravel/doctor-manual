@@ -1,12 +1,153 @@
 .page-header {
+  position: relative;
+  min-height: 787px;
   color: $extraFontColor;
+  background-image: url('/assets/img/header-bg-phone.svg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: $phoneContentWidth;
+  margin: 0 auto;
+  margin-bottom: 500px;
+  padding: 23px (($phoneWidth - $phoneContentWidth) / 2) 0;
 }
 
-.page-header__description {
+.page-header__logo-my-health {
+  margin-left: -1px;
+}
 
+.page-header__logo-mir {
+  margin-right: 1px;
+}
+
+.page-header__market-list {
+  flex-grow: 1;
+  order: 1;
+}
+
+.page-header__features {
+  margin-top: 23px;
+  margin-bottom: 36px;
+}
+
+.page-header__phone-list {
+  order: 2;
+}
+
+@media screen and (min-width: $tabletWidth) {
+
+  .page-header {
+    min-height: 594px;
+    background-image: url('/assets/img/header-bg-tablet.svg');
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      box-shadow: 0 3px 9px 0 rgba(0, 63, 73, 0.1);
+    }
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: $tabletContentWidth;
+    padding: 7px (($tabletWidth - $tabletContentWidth) / 2) 0;
+  }
+
+  .page-header__logo-my-health {
+    width: 97px;
+    height: 37px;
+    margin-left: 0;
+    margin-right: 98px;
+  }
+
+  .page-header__logo-mir {
+    order: 2;
+    width: 120px;
+    height: 37px;
+    margin-right: 24px;
+  }
+
+  .page-header__market-list {
+    flex-grow: initial;
+    margin-top: 5px;
+    margin-right: 22px;
+  }
+
+  .page-header__nav {
+    order: 3;
+    margin-top: 2px;
+  }
+
+  .page-header__features {
+    order: 4;
+    margin-top: 36px;
+    margin-left: 2px;
+  }
+
+  .page-header__phone-list {
+    position: absolute;
+    right: 86px;
+    bottom: -76px;
+    order: 5;
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .page-header {
+      min-height: 915px;
+      background-image: url('/assets/img/header-bg-desktop.svg');
+
+      &::after {
+        content: '';
+        height: 100px;
+        box-shadow: 0 3px 9px 0 rgba(0, 63, 73, 0.1);
+      }
+    }
+
+    .page-header__wrapper {
+      width: $desktopContentWidth;
+      padding: 17px (($desktopWidth - $desktopContentWidth) / 2) 0;
+    }
+
+    .page-header__logo-my-health {
+      width: 173px;
+      height: 66px;
+      margin-left: -1px;
+      margin-right: 756px;
+    }
+
+    .page-header__logo-mir {
+      width: 190px;
+      height: 59px;
+      margin-right: 0;
+    }
+
+    .page-header__market-list {
+      flex-grow: initial;
+      margin-top: 5px;
+      margin-right: 22px;
+    }
+
+    .page-header__features {
+      margin-top: 73px;
+      margin-left: -3px;
+      margin-right: 220px;
+    }
+
+    .page-header__phone-list {
+      position: relative;
+      left: 0;
+      bottom: -106px;
+    }
+  }
 }

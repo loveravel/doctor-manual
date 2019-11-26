@@ -1,0 +1,166 @@
+.phones {
+  @include clear-list;
+  position: relative;
+  width: $phoneContentWidth;
+}
+
+.phones__item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .phones__name {
+    position: absolute;
+    color: $neutral-primary;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      border: 1px solid $neutral-primary;
+      border-radius: 50%;
+    }
+  }
+
+  &--ios {
+    left: -29px;
+    top: 36px;
+
+    .phones__name {
+      left: 82px;
+      bottom: -53px;
+
+      &::before {
+        left: 9px;
+        top: -23px;
+      }
+    }
+  }
+
+  &--android {
+    right: -36px;
+    top: -1px;
+
+    .phones__name {
+      font-weight: 600;
+      left: 96px;
+      bottom: -18px;
+
+      &::before {
+        left: 29px;
+        top: -24px;
+        background-color: $neutral-primary;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tabletWidth) {
+  .phones {
+    min-width: 280px;
+    min-height: 362px;
+  }
+
+  .phones__item {
+    .phones__name::before {
+      width: 3px;
+      height: 3px;
+      border: 2px solid $neutral-primary;
+    }
+
+    &--ios {
+      left: -21px;
+      top: 27px;
+
+      .phones__img {
+        width: 217px;
+        height: 354px;
+      }
+
+      .phones__name {
+        left: 85px;
+        bottom: -36px;
+
+        &::before {
+          left: 6px;
+          top: -21px;
+        }
+      }
+    }
+
+    &--android {
+      .phones__img {
+        width: 241px;
+        height: 413px;
+      }
+
+      .phones__name {
+        left: 83px;
+        bottom: -5px;
+
+        &::before {
+          left: 27px;
+          top: -20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .phones {
+      min-width: 491px;
+      min-height: 618px;
+    }
+
+    .phones__item {
+      .phones__name {
+        font-size: 24px;
+        &::before {
+          width: 4px;
+          height: 4px;
+          border: 3px solid $neutral-primary;
+        }
+      }
+
+
+      &--ios {
+        left: -25px;
+        top: 54px;
+
+        .phones__img {
+          width: 311px;
+          height: 569px;
+        }
+
+        .phones__name {
+          left: 132px;
+          bottom: -125px;
+
+          &::before {
+            left: 14px;
+            top: -24px;
+          }
+        }
+      }
+
+      &--android {
+        .phones__img {
+          width: 369px;
+          height: 682px;
+        }
+
+        .phones__name {
+          left: 133px;
+          bottom: -66px;
+
+          &::before {
+            left: 43px;
+            top: -24px;
+          }
+        }
+      }
+    }
+  }
+}
