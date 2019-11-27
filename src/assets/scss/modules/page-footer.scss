@@ -1,0 +1,95 @@
+.page-footer {
+  margin-top: 75px;
+  background-color: $default-muted-color;
+}
+
+.page-footer__wrapper {
+  width: $phoneContentWidth;
+  margin: 0 auto;
+  padding: 12px (($phoneWidth - $phoneContentWidth) / 2) 8px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__info {
+  font-size: 12px;
+  line-height: 16px;
+  color: $extraMutedColor;
+  margin-left: -1px;
+
+  a {
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
+.page-footer__languages,
+.page-footer__name,
+.page-footer__copyright {
+  @include clear-indent;
+  margin-bottom: 1px;
+}
+
+@media screen and (min-width: $tabletWidth) {
+  .page-footer {
+    margin-top: 81px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tabletContentWidth;
+    margin: 0 auto;
+    padding: 12px (($tabletWidth - $tabletContentWidth) / 2) 8px;
+  }
+
+  .page-footer__logo {
+    display: initial;
+    margin-top: 4px;
+    margin-left: -3px;
+    transform: scale(0.93);
+    fill: $extraMutedColor;
+  }
+
+  .page-footer__info {
+    text-align: right;
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .page-footer {
+      margin-top: 77px;
+    }
+
+    .page-footer__wrapper {
+      width: $desktopContentWidth;
+      margin: 0 auto;
+      padding: 12px (($desktopWidth - $desktopContentWidth) / 2) 18px;
+    }
+
+    .page-footer__logo {
+      display: initial;
+      width: 190px;
+      height: 59px;
+      margin-top: 18px;
+      margin-left: 28px;
+      transform: scale(1.5);
+    }
+
+    .page-footer__info {
+      font-size: 14px;
+      line-height: 19px;
+      margin-top: 9px;
+      margin-right: -1px;
+    }
+
+    .page-footer__languages,
+    .page-footer__name,
+    .page-footer__copyright {
+      margin-bottom: 0;
+    }
+  }
+}
+

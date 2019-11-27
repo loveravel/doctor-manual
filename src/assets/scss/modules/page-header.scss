@@ -23,7 +23,9 @@
 }
 
 .page-header__logo-mir {
+  display: block;
   margin-right: 1px;
+  fill: $default-color;
 }
 
 .page-header__market-list {
@@ -74,15 +76,15 @@
 
   .page-header__logo-mir {
     order: 2;
-    width: 120px;
-    height: 37px;
+    margin-top: -1px;
     margin-right: 24px;
+    transform: scale(0.95);
   }
 
   .page-header__market-list {
     flex-grow: initial;
     margin-top: 5px;
-    margin-right: 22px;
+    margin-right: 19px;
   }
 
   .page-header__nav {
@@ -132,12 +134,13 @@
       width: 190px;
       height: 59px;
       margin-right: 0;
+      transform: scale(1.5);
     }
 
     .page-header__market-list {
       flex-grow: initial;
       margin-top: 5px;
-      margin-right: 22px;
+      margin-right: 8px;
     }
 
     .page-header__features {
