@@ -13,22 +13,27 @@
 
   .market-list__item--app-store {
     order: 1;
-    margin-left: 4px;
+    margin-left: 3px;
   }
 
   .market-list__img {
     width: 88px;
-    height: 27px;
+    height: 26px;
   }
 
   @media screen and (min-width: $desktopWidth) {
     .market-list__item--app-store {
       margin-left: 26px;
+
+      .market-list__img {
+        width: 130px;
+        height: 45px;
+      }
     }
 
     .market-list__img {
       width: 162px;
-      height: 46px;
+      height: 45px;
     }
   }
 }

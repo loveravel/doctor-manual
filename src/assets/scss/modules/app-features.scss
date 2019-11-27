@@ -88,7 +88,7 @@
 
 @media screen and (min-width: $tabletWidth) {
   .app-features {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .app-features__wrapper {
@@ -100,7 +100,7 @@
     font-size: 28px;
     text-align: left;
     margin-left: 1px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .app-features__list {
@@ -112,12 +112,12 @@
 
   .app-features__item {
     width: 195px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding-left: 65px;
 
     &--coming::after {
       right: 26px;
-      top: -6px;
+      top: -8px;
     }
 
     &::before {

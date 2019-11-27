@@ -37,20 +37,36 @@
       <ul class="page-header__market-list market-list">
         <li class="market-list__item market-list__item--app-store">
           <a href="" class="market-list__link">
-            <img class="market-list__img"
-              src="assets/img/app-store.svg"
-              width="128" height="36"
-              alt="Логотип. App Store"
-            >
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="assets/img/app-store-desktop.svg"
+              >
+              <source media="(min-width: 768px)"
+                srcset="assets/img/app-store-tablet.svg"
+              >
+              <img class="market-list__img"
+                src="assets/img/app-store-phone.svg"
+                width="128" height="36"
+                alt="Логотип. Play Store"
+              >
+            </picture>
           </a>
         </li>
         <li class="market-list__item market-list__item--play-store">
           <a href="" class="market-list__link">
-            <img class="market-list__img"
-              src="assets/img/play-store.svg"
-              width="128" height="36"
-              alt="Логотип. Play Store"
-            >
+            <picture>
+              <source media="(min-width: 1920px)"
+                srcset="assets/img/play-store-desktop.svg"
+              >
+              <source media="(min-width: 768px)"
+                srcset="assets/img/play-store-tablet.svg"
+              >
+              <img class="market-list__img"
+                src="assets/img/play-store-phone.svg"
+                width="128" height="36"
+                alt="Логотип. Play Store"
+              >
+            </picture>
           </a>
         </li>
       </ul>

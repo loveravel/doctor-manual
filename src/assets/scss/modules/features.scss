@@ -72,7 +72,7 @@
   .features__motivation {
     font-size: 24px;
     line-height: 33px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .features__description {
@@ -96,13 +96,13 @@
 
   .features__item {
     &::before {
-      left: -76px;
-      top: -16px;
+      left: -75px;
+      top: -15px;
     }
 
     &--place {
       &::before {
-        top: -4px;
+        top: -3px;
       }
     }
   }
