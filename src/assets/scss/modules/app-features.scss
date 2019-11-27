@@ -1,5 +1,5 @@
 .app-features {
-
+  margin-bottom: 42px;
 }
 
 .app-features__wrapper {
@@ -87,6 +87,10 @@
 }
 
 @media screen and (min-width: $tabletWidth) {
+  .app-features {
+    margin-bottom: 33px;
+  }
+
   .app-features__wrapper {
     width: $tabletContentWidth;
     padding: 0 (($tabletWidth - $tabletContentWidth) / 2);
@@ -161,6 +165,10 @@
   }
 
   @media screen and (min-width: $desktopWidth) {
+    .app-features {
+      margin-bottom: 218px;
+    }
+
     .app-features__wrapper {
       width: $desktopContentWidth;
       padding: 0 (($desktopWidth - $desktopContentWidth) / 2);

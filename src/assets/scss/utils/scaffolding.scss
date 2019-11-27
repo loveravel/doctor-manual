@@ -4,7 +4,8 @@ html {
   height: 100%;
 
   @media screen and (min-width: $desktopWidth) {
-		font-size: 18px;
+    font-size: 18px;
+    overflow-x: hidden;
   }
 }
 

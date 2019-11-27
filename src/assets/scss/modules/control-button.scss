@@ -1,0 +1,26 @@
+.control-button {
+  position: relative;
+  width: 47px;
+  height: 48px;
+  background-color: $highlight-color;
+  background-image: url('/assets/img/arrow-tablet.svg');
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 3px 9px rgba(0,63,73,0.1),
+              0px 10px 25px rgba(186,16,12,0.3);
+}
+
+.control-button--next {
+  transform: scale(-1, 1);
+}
+
+@media screen and (min-width: $desktopWidth) {
+  .control-button {
+    width: 82px;
+    height: 82px;
+    background-image: url('/assets/img/arrow-desktop.svg');
+    background-position: 30px center;
+  }
+}
