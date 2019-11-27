@@ -1,7 +1,34 @@
 .health-control__wrapper {
+  position: relative;
   width: $phoneContentWidth;
   margin: 0 auto;
   padding: 0 (($phoneWidth - $phoneContentWidth) / 2);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &::before {
+    width: 302px;
+    height: 292px;
+    left: 0;
+    top: 124px;
+    transform: translateX(-50%);
+    background-image: url('/assets/img/spot-left.svg');
+  }
+
+  &::after {
+    width: 233px;
+    height: 188px;
+    right: 0;
+    top: -152px;
+    transform: translateX(71px);
+    background-image: url('/assets/img/spot-right.svg');
+  }
 }
 
 .health-control__article {
@@ -16,6 +43,17 @@
   .health-control__wrapper {
     width: $tabletContentWidth;
     padding: 0 (($tabletWidth - $tabletContentWidth) / 2);
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: -15px;
+      width: 461px;
+      height: 372px;
+      transform: translateX(64px);
+    }
   }
 
   .health-control__article {
@@ -33,6 +71,23 @@
       justify-content: space-between;
       width: $desktopContentWidth;
       padding: 0 (($desktopWidth - $desktopContentWidth) / 2);
+
+      &::before {
+        display: initial;
+        top: -220px;
+        width: 395px;
+        height: 394px;
+        transform: translateX(-57px);
+        background-image: url('/assets/img/courses-icon.svg');
+        opacity: 0.15;
+      }
+
+      &::after {
+        top: -440px;
+        width: 1128px;
+        height: 910px;
+        transform: translateX(685px);
+      }
     }
 
     .health-control__article {

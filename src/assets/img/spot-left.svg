@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="304" height="293" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="a">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="5" result="effect0_gaussianBlur"/>
+    </filter>
+  </defs>
+  <g filter="url(#a)" transform="translate(.5 .5)">
+    <path d="M174.284 58.541c-16.063 6.448-38.931-7.045-68.455 8.234s-56.013 41.118-51.815 75.187c4.197 34.07 52.295 62.505 42.107 82.548-10.188 20.044 7.586 69.185 33 50.159 25.412-19.027 57.59-83.488 64.976-92.487 7.386-8.997 41.503-19.984 58.697-30.224 17.194-10.24 48.409-9.829 28.868-31.567-19.54-21.738-29.105-33.942-56.22-34.522-27.114-.58-35.095-33.775-51.158-27.328z" fill="#FF5252" fill-opacity=".1" style="mix-blend-mode:multiply"/>
+  </g>
+  <path d="M251.792 150.055c-7.04 13.353 2.543 34.422-13.365 58.652-15.907 24.23-40.67 44.868-69.752 38.13-29.083-6.739-49.286-51.059-67.55-44.04-18.265 7.019-59.143-12.87-40.37-33.193 18.774-20.323 77.46-42.386 85.915-47.977 8.454-5.591 21.069-34.198 31.493-48.187 10.425-13.989 12.916-41.113 29.934-22.181 17.018 18.931 26.7 28.34 24.728 51.921-1.972 23.581 26.01 33.522 18.967 46.875z" fill="#FF8A65" fill-opacity=".1"/>
+</svg>
